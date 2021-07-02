@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>head title=this.title subpage='ATN Shop' }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link rel="stylesheet" href="../CSS/thanhtoan.css">
+</head>
+<body>
+    {{>header  title=this.title}}
+    {{>footer}}
+    <div style="margin-top: 50px;"></div>
+    <div class="logo">
+        <a href="product"><img src="logo.png"></a>
+    </div>
+    <div style="margin-top: 10px;"></div>
+    <div class="container">
+        <h3>Thông tin giao hàng</h3>
+        <form class="form-group">
+            <input type="text" placeholder="Số điện thoại" class="form-1">
+            <input type="text" placeholder="Email" class="form-1"> <br>
+            <input type="text" placeholder="Họ và tên" class="form-2"> <br>
+            <input type="text" placeholder="Địa chỉ" class="form-3"> <br>
+            <textarea name="if" id="" cols="30" rows="10" placeholder="Nhập ghi chú (nếu có)"></textarea> <br>
+            <input type="radio" name="pay" class="form-4"> Thanh toán khi nhận hàng <br>
+            <input type="radio" name="pay" class="form-4"> Thanh toán chuyển khoảng
+            <br>
+        </form>
+        <div class="form-group">
+            <img src="nike.jpg" style="width: 50%;">
+            <p>Tổng: 3.000.000đ</p>
+            <br>
+            <div class="submit">
+            <a href="/view/product.hbs">Hoàn thành thanh toán</a>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
